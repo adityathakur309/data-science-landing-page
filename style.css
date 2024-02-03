@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* css reset  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+:root {
+    --primarycolor: #FFFFFF;
+    --secandorycolor: #FB8454;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0px auto;
+
+}
+
+.m-bot {
+    margin-bottom: 100px;
+
+}
+
+a {
+    text-decoration: none
+}
+
+/* home section start */
+.home {
+    background-image: url(images/main/Group\ 9.jpg);
+    height: 810px;
+
+}
+
+/* header styling start  */
+header {
+    z-index: 1;
+    position: relative;
+    padding-top: 2.5rem;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+
+nav img {
+    width: 200px;
+    height: 97.62px;
+
+
+}
+
+nav .nav {
+    display: flex;
+    gap: 2.2rem;
+    flex-wrap: wrap;
+
+
+}
+
+nav .nav a {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    color: var(--primarycolor);
+
+
+}
+
+nav .nav .fa-bars {
+    font-size: 1.5rem;
+    color: var(--primarycolor);
+    display: none;
+
+}
+
+/* header styling end  */
+/* data text start  */
+.home-sec {
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    height: 454px;
+
+}
+
+.home-sec .item {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+.home-sec .data-text {
+    align-self: center;
+}
+
+.home-sec .data-text h2 {
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 54px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--primarycolor);
+    margin-bottom: 30px;
+
+
+}
+
+.data-text h2 span {
+    color: var(--secandorycolor);
+}
+
+.data-text p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--primarycolor);
+
+}
+
+/* data text end  */
+
+/* form sec start  */
+.form-sec h2 {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: left;
+    color: var(--primarycolor);
+    margin-bottom: 2.8rem;
+
+
+
+
+}
+
+form .input {
+    position: relative;
+    margin-bottom: 2rem;
+
+}
+
+form .input input {
+    padding: 0.4rem 1.8rem;
+    background: transparent;
+    outline: none;
+    border: medium;
+    border-bottom: 1px solid #FFFFFF;
+    width: 100%;
+
+}
+
+form .input img {
+    position: absolute;
+    left: 0;
+    top: 0.3rem;
+}
+
+form .btn {
+    width: 150px;
+    border-radius: 50px;
+    color: var(--primarycolor);
+    background-color: var(--secandorycolor);
+    border: none;
+    padding: 0.5rem 2rem;
+}
+
+/* form sec ned  */
+/* home section end  */
+
+/* why start  */
+
+/* why end  */
+
+
+/* media queries start  */
+/* phone start  */
+@media screen and (max-width:576px) {
+    .container {
+        max-width: 100%;
+        padding: 1rem 1.1rem;
+    }
+
+    .m-bot {
+        margin-bottom: 60px;
+    }
+
+    .home-sec {
+        gap: 60px;
+    }
+
+}
+
+/* phone end  */
+/* tab start  */
+@media screen and (max-width:780px) {
+    .home {
+        height: 1170px;
+
+    }
+/*  */
+    nav .nav .fa-bars {
+        display: block;
+    }
+
+    .nav a {
+        display: none;
+    }
+
+    nav img {
+        width: 150px;
+        height: 70px;
+
+    }
+}
+
+/* tab end  */
+
+
+
+/* meadia queries end  */
