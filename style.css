@@ -183,6 +183,7 @@ form .btn {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
+    margin-bottom: 2.5rem;
 
 }
 
@@ -250,6 +251,87 @@ form .btn {
 
 
 /* why end  */
+/* ds course start  */
+.ds-course{
+    padding: 6rem 0rem;
+    background-color: #121313;
+    
+    
+}
+.dscourse-sec .heading{
+    margin-bottom: 2.2rem;
+}
+.dscourse-sec .heading h2{
+    font-size: 28px;
+    font-weight: 700;
+    text-align: left;
+    color: #FB8454;
+    margin-bottom: 0.3rem;
+
+}
+.dscourse-sec .heading p{
+font-size: 14px;
+font-weight: 400;
+text-align: left;
+color: #FFFFFF;
+
+}
+ .dscourse-sec .ds-boxes{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+
+
+}
+.dscourse-sec .ds-boxes .ds-item{
+    flex-basis: 300px;
+    flex-grow: 1;
+    position: relative;
+}
+.ds-boxes .ds-item .n1{
+    width: 82px;
+    height: 82px;
+    padding: 24px 32px 24px 32px;
+    background-color: var(--secandorycolor);
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--primarycolor);
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+.ds-item .n1:after{
+    content: "";
+    width: 88%;
+    background-color: #FB8454;
+    height: 3px;
+    position: absolute;
+
+
+}
+.ds-item .ds-box{
+    padding: 2rem 2rem;
+    border: none;
+    border-radius: 20px;
+    background-color:#F8F8F8;
+
+}
+.ds-item .ds-box h3{
+font-size: 22px;
+font-weight: 700;
+text-align: left;
+color: #000000;
+
+}
+.ds-item .ds-box p{
+font-size: 16px;
+font-weight: 400;
+text-align: left;
+color:#000000 ;
+
+}
+/* ds course end  */
 
 
 /* media queries start  */
@@ -269,6 +351,9 @@ form .btn {
     }
     .why-item .item{
         flex-wrap: wrap;
+    }
+    .ds-item .n1:after{
+        width: 80%;
     }
 
 }
