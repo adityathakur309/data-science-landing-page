@@ -179,6 +179,75 @@ form .btn {
 /* home section end  */
 
 /* why start  */
+.why-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+
+}
+
+.why-item {
+    flex-basis: 300px;
+    flex-grow: 1;
+
+
+}
+
+.why-item .heading {
+    margin-bottom: 3rem;
+}
+
+.why-item .heading h2 {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: left;
+    color: var(--secandorycolor);
+    margin-bottom: 0.4rem;
+
+}
+
+.why-item .heading p {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+
+}
+
+.why-item .item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.why-item .item img {
+    width: 55px;
+    height: 55px;
+
+}
+
+.why-item .item h3 {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: left;
+
+}
+
+.why-item .item p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+
+}
+
+.why-section .right {
+    align-self: center;
+}
+.right img{
+    width: 100%;
+    display: block;
+    
+}
+
 
 /* why end  */
 
@@ -198,6 +267,9 @@ form .btn {
     .home-sec {
         gap: 60px;
     }
+    .why-item .item{
+        flex-wrap: wrap;
+    }
 
 }
 
@@ -208,7 +280,8 @@ form .btn {
         height: 1170px;
 
     }
-/*  */
+
+    /*  */
     nav .nav .fa-bars {
         display: block;
     }
