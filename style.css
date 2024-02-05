@@ -386,7 +386,7 @@ form .btn {
 
 .ds-item .n1:after {
     content: "";
-    width: 88%;
+    width: 90%;
     background-color: #FB8454;
     height: 3px;
     position: absolute;
@@ -673,7 +673,7 @@ footer .bottom div {
 @media screen and (max-width:576px) {
     .container {
         max-width: 100%;
-        padding: 1rem 1.1rem;
+        padding: 1rem 1.5rem;
     }
 
     .m-bot {
@@ -689,7 +689,7 @@ footer .bottom div {
     }
 
     .ds-item .n1:after {
-        width: 80%;
+        width: 85%;
     }
 
     .animation img:nth-child(4) {
