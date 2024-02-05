@@ -33,7 +33,6 @@ a {
 .home {
     background-image: url(images/main/Group\ 9.jpg);
     height: 810px;
-    position: relative;
 
 }
 
@@ -72,10 +71,13 @@ nav .nav {
 nav .nav a {
     font-size: 14px;
     font-weight: 600;
-    line-height: 18px;
     color: var(--primarycolor);
+    transition: all 0.5s;
 
 
+}
+nav .nav a:hover{
+    color: var(--secandorycolor);
 }
 
 nav .nav .fa-bars {
@@ -91,7 +93,6 @@ nav .nav .fa-bars {
     display: flex;
     gap: 100px;
     flex-wrap: wrap;
-    height: 454px;
 
 }
 
@@ -110,14 +111,19 @@ nav .nav .fa-bars {
     line-height: 54px;
     letter-spacing: 0px;
     text-align: left;
-    color: var(--primarycolor);
     margin-bottom: 30px;
+    color: #FFFFFF;
 
 
 }
 
 .data-text h2 span {
-    color: var(--secandorycolor);
+    background: linear-gradient(to right, #FB8454, #FF4E4E);
+    background-clip: text;
+    color: transparent;
+
+
+
 }
 
 .data-text p {
@@ -171,86 +177,13 @@ form .btn {
     width: 150px;
     border-radius: 50px;
     color: var(--primarycolor);
-    background-color: var(--secandorycolor);
     border: none;
     padding: 0.5rem 2rem;
+    background: linear-gradient(to right, #FB8454, #FF4E4E);
 }
 
 /* form sec ned  */
-/* buble sec start  */
-.animation {
-    display: flex;
-    gap: 50px;
-    position: absolute;
-    bottom: 20px;
-}
 
-.animation img {
-    height: 60px;
-    width: 60px;
-    opacity: 0;
-    animation: up 7s linear infinite;
-}
-
-.animation img:nth-child(1) {
-    animation-delay: 1.5s;
-}
-
-.animation img:nth-child(2) {
-    animation-delay: 2s;
-}
-
-.animation img:nth-child(3) {
-    animation-delay: 2.8s;
-}
-
-.animation img:nth-child(4) {
-    animation-delay: 2s;
-}
-
-.animation img:nth-child(5) {
-    animation-delay: 5s;
-}
-
-.animation img:nth-child(6) {
-    animation-delay: 3s;
-}
-
-.animation img:nth-child(7) {
-    animation-delay: 4s;
-}
-
-.animation img:nth-child(8) {
-    animation-delay: 5s;
-}
-
-.animation img:nth-child(9) {
-    animation-delay: 6s;
-}
-
-.animation img:nth-child(10) {
-    animation-delay: 7s;
-}
-
-
-
-@keyframes up {
-    from {
-        opacity: 0;
-
-
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(-800px);
-    }
-
-
-
-}
-
-/* end   */
 /* home section end  */
 
 /* why start  */
@@ -277,7 +210,9 @@ form .btn {
     font-size: 28px;
     font-weight: 700;
     text-align: left;
-    color: var(--secandorycolor);
+    background: linear-gradient(90deg, #FB8454 0%, #FF4E4E 100%);
+    background-clip: text;
+    color: transparent;
     margin-bottom: 0.4rem;
 
 }
@@ -291,7 +226,7 @@ form .btn {
 
 .why-item .item {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -345,6 +280,9 @@ form .btn {
     text-align: left;
     color: #FB8454;
     margin-bottom: 0.3rem;
+    background: linear-gradient(to right, #FB8454, #FF4E4E);
+    background-clip: text;
+    color: transparent;
 
 }
 
@@ -371,9 +309,9 @@ form .btn {
 }
 
 .ds-boxes .ds-item .n1 {
-    width: 82px;
-    height: 82px;
-    padding: 24px 32px 24px 32px;
+    width: 60px;
+    height: 60px;
+    padding: 1rem 0.4rem;
     background-color: var(--secandorycolor);
     border: none;
     border-radius: 50%;
@@ -386,10 +324,11 @@ form .btn {
 
 .ds-item .n1:after {
     content: "";
-    width: 90%;
-    background-color: #FB8454;
+    width: 93%;
+    background: linear-gradient(to right, #FB8454, #FF4E4E);
     height: 3px;
     position: absolute;
+    top: 1.5rem;
 
 
 }
@@ -425,7 +364,9 @@ form .btn {
     font-size: 28px;
     font-weight: 700;
     text-align: left;
-    color: var(--secandorycolor);
+    background: linear-gradient(to right, #FB8454, #FF4E4E);
+    background-clip: text;
+    color: transparent;
     margin-bottom: 2.5rem;
 
 
@@ -474,7 +415,9 @@ form .btn {
     font-size: 28px;
     font-weight: 700;
     text-align: center;
-    color: var(--secandorycolor);
+    background: linear-gradient(to right, #FB8454, #FF4E4E);
+    background-clip: text;
+    color: transparent;
     margin-bottom: 60px;
 
 
@@ -498,7 +441,7 @@ form .btn {
     flex-wrap: wrap;
     gap: 10px 0px;
     justify-content: space-between;
-    background-color: #FB8454;
+    background: linear-gradient(to right, #FB8454, #FF4E4E);
     padding: 2rem 2rem;
     color: #F8F8F8;
     border: none;
@@ -673,15 +616,18 @@ footer .bottom div {
 @media screen and (max-width:576px) {
     .container {
         max-width: 100%;
-        padding: 1rem 1.5rem;
+        padding: 1rem 1.2rem;
     }
 
     .m-bot {
-        margin-bottom: 60px;
+        margin-bottom: 50px;
     }
 
     .home-sec {
-        gap: 60px;
+        gap: 50px;
+    }
+    .home-sec .data-text {
+        margin-top: -40px;
     }
 
     .why-item .item {
@@ -689,40 +635,10 @@ footer .bottom div {
     }
 
     .ds-item .n1:after {
-        width: 85%;
+        width: 88%;
     }
 
-    .animation img:nth-child(4) {
-        animation-delay: 2s;
-        display: none;
-    }
-    .animation img:nth-child(5) {
-        animation-delay: 2s;
-        display: none;
-    }
-    .animation img:nth-child(6) {
-        animation-delay: 2s;
-        display: none;
-    }
-    .animation img:nth-child(7) {
-        animation-delay: 2s;
-        display: none;
-    }
-    .animation img:nth-child(8) {
-        animation-delay: 2s;
-        display: none;
-    }
-    .animation img:nth-child(9) {
-        animation-delay: 2s;
-        display: none;
-    }
-    .animation img:nth-child(10) {
-        animation-delay: 2s;
-        display: none;
-    }
-    .animation{
-        gap: 20px;
-    }
+
 
 }
 
@@ -730,7 +646,7 @@ footer .bottom div {
 /* tab start  */
 @media screen and (max-width:780px) {
     .home {
-        height: 1170px;
+        height: 1140px;
 
     }
 
