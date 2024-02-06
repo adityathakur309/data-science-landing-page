@@ -655,11 +655,12 @@ footer .bottom div {
 
 }
 
+
 /* phone end  */
 /* tab start  */
 @media screen and (max-width:780px) {
     .home {
-        height: 1140px;
+        height: 1200px;
 
     }
 
