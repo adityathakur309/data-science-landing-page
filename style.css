@@ -469,6 +469,9 @@ form .btn {
     color: #FFFFFF;
 
 }
+.faq-item img{
+    cursor: pointer;
+}
 
 .faq-item>p {
     padding: 1rem;
@@ -482,6 +485,15 @@ form .btn {
     color: #121313;
 }
 .faq-item .p-show{
+    display: none;
+}
+.faq-item .p-show1{
+    display: none;
+}
+.faq-item .p-show2{
+    display: none;
+}
+.faq-item .p-show3{
     display: none;
 }
 
